@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.resume-upload {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.resume-upload input {
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.results-container {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.score-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.score-display {
+  text-align: center;
+}
+
+.score-display span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.suggestions {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.suggestions ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.suggestions li {
+  margin-bottom: 10px;
+}
+
+.speedometer {
+  width: 300px;
+}
+.section-analysis {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.section-results {
+  display: flex;
+  gap: 30px;
+}
+
+.found-sections, .missing-sections {
+  flex: 1;
+}
+
+.section-suggestions, .general-suggestions {
+  margin-top: 15px;
+}
+
+.suggestions ul {
+  padding-left: 20px;
+}

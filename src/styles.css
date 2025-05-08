@@ -1,0 +1,340 @@
+/* Dark theme background and base text styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: #00bcd4;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* File Upload Component */
+.upload-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.upload-button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #0097a7;
+}
+
+.loading {
+  text-align: center;
+  color: #ffca28;
+  margin-top: 1rem;
+}
+
+/* Score Display */
+.score-circle {
+  margin: 2rem auto;
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(#00bcd4 calc(var(--score) * 1%), #333 calc(var(--score) * 1%));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f0f0;
+  font-size: 2rem;
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+/* Analysis and Suggestions */
+.analysis-box,
+.suggestions-box {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+}
+
+.analysis-box h2,
+.suggestions-box h2 {
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-box p,
+.suggestions-box ul {
+  color: #ddd;
+}
+
+.suggestions-box ul {
+  padding-left: 1.2rem;
+}
+
+.suggestions-box li {
+  margin: 0.5rem 0;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .score-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 1.5rem;
+  }
+}
+/* File input wrapper */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Styled file input label */
+.upload-label {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.upload-label:hover {
+  background-color: #0097a7;
+}
+
+/* Hide the actual file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Optional loading spinner/text */
+.loading {
+  margin-top: 1rem;
+  color: #ffca28;
+  font-weight: bold;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload label {
+  background-color: #1e88e5;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.4);
+}
+
+.file-upload label:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+/* Enhanced Footer Styles */
+footer {
+  background-color: #333;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ff8c00; /* Bright orange for hover effect */
+  text-decoration: underline;
+}
+/* Styling the Dropdown Lists */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove the default outline */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling the select containers */
+.job-role, .experience-level {
+  margin: 20px 0;
+}
+
+.job-role select, .experience-level select {
+  width: 300px; /* Fixed width for better alignment */
+  margin-top: 5px;
+}
+/* Styling the Dropdown Lists */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+  cursor: pointer; /* Add pointer cursor on hover for better UX */
+}
+
+/* Hover effect to show the dropdown on mouse hover */
+select:hover {
+  border-color: #007bff; /* Blue border on hover */
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+/* When the select element is focused (clicked or tabbed) */
+select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove the default outline */
+}
+
+/* Styling the label for dropdown */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling for the container of the dropdown */
+.job-role, .experience-level {
+  margin: 20px 0;
+}
+
+.job-role select, .experience-level select {
+  width: 300px; /* Fixed width for better alignment */
+  margin-top: 5px;
+}
+
+/* Add a smooth transition effect when the dropdown is expanded */
+select option {
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color of options on hover */
+select option:hover {
+  background-color: #f0f8ff;
+}
+/* CSS for Dropdowns */
+.job-role, .experience-level {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+option {
+  font-size: 14px;
+  padding: 10px;
+}
+
+select:hover {
+  background-color: #f1f1f1;
+}
+
+select:focus, select:hover {
+  background-color: #e6f7ff;
+  border-color: #007bff;
+}
